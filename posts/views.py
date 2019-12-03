@@ -83,7 +83,7 @@ def get_user_posts(request):
     group_set = user.group.all()
     post_set = []
     for group in group_set:
-        post_set += list(group.group.posts.filter(timestamp_gte=group.timestamp))
+        post_set += list(group.group.posts.filter(timestamp__gte=group.timestamp))
     post_set.sort(key=lambda x:x.timestamp, reverse=True)
     serialized_data = serializers.serialize('json', post_set)
     return HttpResponse(serialized_data, status=HTTP_200_OK)
