@@ -25,7 +25,7 @@ SECRET_KEY = '*t0infy90@hle4e#p4@ct=8n_tsaqu%pvx_57q@yzmte-ys6t*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.10.49.209', '127.0.0.1', '10.42.0.1', 'notboard.herokuapp.com']
+ALLOWED_HOSTS = ['10.10.49.209', '127.0.0.1', 'notboard.herokuapp.com']
 
 
 # Application definition
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',  # <-- And here
+        'rest_framework.authentication.TokenAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated', )
@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'noticeboard.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db1.sqlite3'),
     }
 }
 
