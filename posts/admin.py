@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import Posts, PostGroupSharing, PostUserSharing
 
-# Register your models here.
+
+admin.site.register(Posts)
+admin.site.register(PostGroupSharing)
+admin.site.register(PostUserSharing)
