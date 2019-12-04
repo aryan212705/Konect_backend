@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Groups, TimeOfJoining
 
-# Register your models here.
+
+admin.site.register(Groups)
+admin.site.register(TimeOfJoining)
