@@ -33,4 +33,6 @@ urlpatterns = [
     path('api/get_group_posts/', post_views.get_group_posts, name='get_group_posts'),
     path('api/get_user_posts/', post_views.get_user_posts, name='get_user_posts'),
     path('api/get_post/', post_views.get_post, name='get_post'),
+    path('api/get_my_posts/', post_views.get_my_posts, name='get_my_posts'),
+    path('api/get_group_details/', group_views.get_group_details, name='get_group_details'),
 ]
