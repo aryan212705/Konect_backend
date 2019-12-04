@@ -5,7 +5,6 @@ from django.db import models
 
 
 class Groups(models.Model):
-    id = models.BigIntegerField(primary_key = True)
     groupName = models.CharField('Group Name', max_length=50)
     creationDate = models.DateField('Group Creation Date', default=datetime.now)
 
